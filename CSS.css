@@ -1,0 +1,140 @@
+body{background-color:rgb(221, 91, 91);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+h1 { background-color:rgb(221, 91, 91);
+    padding: 5px;
+    color:#ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;}
+h3 {text-align: center;
+    width: 100%;
+    color: #ffffff;
+    float: left;
+    }
+
+a:visited {color: white;}
+
+a{color: white;}
+
+nav ul{list-style-type: none;}
+nav a{text-align: center;
+    float: left;
+    box-sizing: border-box;
+    width: 16.6%;
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;}
+nav li{ display: inline;}
+
+nav li a:hover{text-decoration: none;
+    color:rgb(221, 91, 91);
+    background-color: rgb(255, 255, 255);}
+
+.active{ background-color: rgb(175, 0, 0);}
+
+p {color: white;
+    font-size: 20px;}
+
+.formcontainer {display: flex;
+    align-items: center;
+    justify-content: center;}
+
+form{background-color: rgb(216, 171, 171);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    border-radius: 5px;}
+
+.inputconfig{display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+.inputconfig input{ border: 3px;
+    padding: 10px;
+}
+
+
+form button{padding: 10px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0;
+    background-color: rgb(221, 91, 91);
+    color: white;
+    font-weight: bold;}
+
+.gallery{display: flex;
+    width: 90%;
+    overflow-x: scroll;}
+
+.gallery div{width: 100%;
+    display:grid;
+    grid-gap: 20px;
+    padding:20px;
+    grid-template-columns: auto auto auto auto;
+    flex: none}
+
+.gallery div img {max-width: 300px;
+max-height: 300px;
+object-fit: scale-up;
+filter: grayscale(100);
+transition: transform 1s;}
+
+.gallery::-webkit-scrollbar{
+    display:none;}
+
+    .gallerywrap { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5% auto;
+    }
+
+#back, #forward {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.gallery div img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1);
+        cursor: pointer;
+}
+
+.bodypage{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.columntext{float:left;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 0.5em;}
+
+.columnimage{float:left;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 0.5em;
+    }
+footer{color: rgba(208, 210, 211, 0.671);
+    float: left;
+    width: 100%;
+    text-align: center;}
+
+iframe{float: left;
+    width:100%;}

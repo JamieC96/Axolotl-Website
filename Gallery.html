@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+    <img src="Banner.png" alt="Banner" style="width: 100%">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Basic_Info.html">Basic Info</a></li>
+            <li><a href="Keeping_Axolotls.html">Keeping Axolotls</a></li>
+            <li><a href="In_The_Wild.html">In The Wild</a></li>
+            <li><a href="Gallery.html"class="active">Gallery</a></li>
+            <li><a href="Contact_Us.html">Contact Us</a></li>
+          </ul>
+    </nav>
+    <br>
+<div class="bodypage">
+    <h1>Gallery</h1>
+<div class="gallerywrap">
+<img src= "SlideImages/icons8-back-arrow-16.png" id="back">
+<div class="gallery">
+    <div>
+        <span><img src="SlideImages/image1.png"></span>
+        <span><img src="SlideImages/image2.png"></span>
+        <span><img src="SlideImages/image3.png"></span>
+        <span><img src="SlideImages/Image4.png"></span>
+    </div>
+    <div>    
+        <span><img src="SlideImages/image5.png"></span>
+        <span><img src="SlideImages/image 6.png"></span>
+        <span><img src="SlideImages/image7.png"></span>
+        <span><img src="SlideImages/image8.png"></span>
+    </div>
+    </div>
+    <img src= "SlideImages/icons8-forward-button-16.png" id="forward">
+</div>
+</div>
+
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let back = document.getElementById("back");
+    let forward = document.getElementById("forward")
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+     back.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 1200;
+     });
+
+     forward.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 1200;
+     });
+</script>
+
+<footer>This website is owned and ran by Jamie Coombs</footer>
+</body>
+</html>
